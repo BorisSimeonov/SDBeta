@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Canvas</title>
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/GameObjects/GameObject.js"></script>
+    <script type="text/javascript" src="js/GameObjects/Bullet.js"></script>
+    <script type="text/javascript" src="js/GameObjects/Player.js"></script>
+    <script type="text/javascript" src="js/GameObjects/Enemy.js"></script>
+    <script type="text/javascript" src="js/GameObjects/GameSound.js"></script>
+    <script type="text/javascript" src="js/GameObjects/EnvironmentObject.js"></script>
+    <script type="text/javascript" src="js/spaceDefenderGame.js"></script>
+    <script type="text/javascript" src="js/generic.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body id="gameBody">
+<section id="spaceDefHolder">
+    <h2><span class="firstLetter">S</span>pace <span class="firstLetter">D</span>efender</h2>
+    <canvas id="main" width="900" height="500">
+        Your browser does not support HTML5 canvas.
+    </canvas>
+    <canvas id="player" width="900" height="500">
+    </canvas>
+    <div class="modal">
+        <div class="modal-inner">
+            <ul class="control_window">
+                <li><a id="start">Play</a></li>
+                <li><a id="get_scores">Highest Scores</a></li>
+                <li><a id="exit">Exit</a></li>
+                <li>
+                    <div class="overview">
+                        <p><span>Objectives:</span> Kill all enemies before they reach the Earth.</p>
+                        <p><span>Movement:</span> Left and Right arrow key.</p>
+                        <p><span>Game pause:</span> ESC key.</p>
+                        <p><span>Shooting:</span> S key.</p>
+                    </div>
+                    <div class="objectImages">
+                        <p class="enemyText">Enemies:</p>
+                        <img src="images/enemyObjects/threat1.png"/>
+                        <img src="images/enemyObjects/threat2.png"/>
+                        <img src="images/enemyObjects/threat3.png"/>
+                        <img src="images/enemyObjects/threat5.png"/>
+                        <img src="images/enemyObjects/threat6.png"/>
+                        <img src="images/enemyObjects/threat7.png"/>
+                        <img src="images/enemyObjects/threat8.png"/>
+                        <img src="images/enemyObjects/threat9.png"/>
+                        <img src="images/enemyObjects/threat10.png"/>
+                        <p class="boonText">Boons:</p>
+                        <img src="images/enemyObjects/threat4.png"/>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+</body>
+<script>
+    window.onload = eventWindowLoaded;
+</script>
+</html>
